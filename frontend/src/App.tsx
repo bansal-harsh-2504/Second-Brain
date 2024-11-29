@@ -1,10 +1,19 @@
 import "./App.css";
 import Button from "./components/Button";
+import PlusIcon from "./icons/PlusIcon";
 
 function App() {
   return (
     <>
-      <Button variant="primary" size="md" text="Login" startIcon={""} onClick={()=>{console.log("dfs")}} />
+      <Button
+        variant="primary"
+        size="md"
+        text="Login"
+        startIcon={<PlusIcon />}
+        onClick={() => {
+          console.log("dfs");
+        }}
+      />
     </>
   );
 }
